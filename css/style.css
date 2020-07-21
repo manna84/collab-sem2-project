@@ -1,0 +1,108 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+h1{
+    text-align: center;
+    font-family: 'Grand Hotel', cursive;
+    color: white;
+    font-size: 100px;
+}
+.buy-top{
+    background-color: #F97C30;
+    cursor: pointer;
+    padding: 14px 40px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 2em;
+    margin-top: 15px;
+    
+}
+.heading{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    text-align: center;
+}
+.adopt{
+    display: flex;
+    margin: 0 15%;
+}
+.adopt p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    text-align: justify;
+}
+h2{
+    color: #F97C30;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 50px;
+}
+/* ---------------------------------- */
+
+.schedule{
+    padding: 0 10%;
+    color: white;
+}
+.schedule h2{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 50px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid white;
+}
+.text-red{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.kelly-red{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+.kelly{
+    display: flex;
+}
+.kelly img{
+    width: 300px;
+    padding-left: 20px;
+}
+.prepare{
+    display: flex;
+    margin: 30px 10%;
+}
+h3{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 50px;
+    color: #E2001A;
+}
+.prepare p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: justify;
+}
+.learn-button{
+    background-color: #E2001A;
+    cursor: pointer;
+    padding: 14px 40px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 2em;
+    margin-top: 15px;
+}
+.black-dog{
+    margin: 50px 0;
+}
+main{
+    border-bottom: 5px solid white;
+}
