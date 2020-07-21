@@ -8,6 +8,10 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static("public"));
 
+const generalController = require("./controllers/general");
+
+app.use("/", generalController);
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, ()=>{
