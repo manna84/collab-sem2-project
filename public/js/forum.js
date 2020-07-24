@@ -6,7 +6,7 @@ petData.addEventListener('submit', (event) => {
     // const petBox = document.getElementById('para');
     // petBox.innerHTML = petData.petDetail.value;
 
-    const box = document.getElementById('para')
+    const box = document.getElementById('forum-box')
     const textBox = document.createElement('li');
 
     textBox.textContent = petData.petDetail.value;
