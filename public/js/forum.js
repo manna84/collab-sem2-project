@@ -18,7 +18,7 @@ petData.addEventListener('submit', (event) => {
 
         box.append(textBox);
         box.append(adoptButton);
-        petData.reset()
+        petData.reset();
     }
 
 });

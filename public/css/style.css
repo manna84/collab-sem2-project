@@ -116,7 +116,7 @@ h2{
 /*--------------FORUM--------------- */
 
 .section-form {
-    padding: 10% 0;
+    padding: 5% 0;
     font-family: 'lato',Arial, Helvetica, sans-serif;
     font-size: 1em;
     font-weight: 400;
@@ -126,12 +126,13 @@ h2{
 h3 {
     font-family: 'lato',Arial, Helvetica, sans-serif;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
 }
 
 .post-form-box {
-    border: .05em solid #FC8121;
-    padding: 1% 2%;
-    border-radius: .2em;
+    margin-top: 2em;
 }
 
 #petForm {
@@ -143,6 +144,7 @@ h3 {
     padding: 1% 1%;
     width: 100%;
     font-family: 'lato',Arial, Helvetica, sans-serif;
+    border: .05em solid #FC8121;
 }
 
 input[type=submit] {
