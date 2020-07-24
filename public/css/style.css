@@ -106,3 +106,8 @@ h3{
 main{
     border-bottom: 5px solid white;
 }
+
+.para {
+    background-color: #E2001A;
+    color: aliceblue;
+}
