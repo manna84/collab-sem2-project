@@ -117,6 +117,10 @@ h2{
 
 .section-form {
     padding: 10% 0;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 145%;
 }
 
 h3 {
@@ -127,6 +131,7 @@ h3 {
 .post-form-box {
     border: .05em solid #FC8121;
     padding: 1% 2%;
+    border-radius: .2em;
 }
 
 #petForm {
@@ -137,11 +142,25 @@ h3 {
 #petDetail {
     padding: 1% 1%;
     width: 100%;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
 }
 
 input[type=submit] {
     width: 10%;
     padding: 1em 2em;
     margin-top: 2em;
+}
+
+#forum-box {
+    margin: 2% auto;
+}
+
+#forum-box li{
+    max-width: 100%;
+    border: .02em solid #afaeae;
+    margin-top: 2em;
+    padding: 2%;
+    border-radius: .2em;
+    text-align: justify;
 }
 
