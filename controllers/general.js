@@ -17,4 +17,12 @@ router.get("/forum",(req, res)=>{
 
 });
 
+router.post("/forum",(req, res)=>{
+
+    res.render("forum", {
+        title : "Forum | BeMyPet"
+    })
+
+});
+
 module.exports = router;
