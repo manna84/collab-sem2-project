@@ -9,4 +9,12 @@ router.get("/",(req, res)=>{
 
 });
 
+router.get("/forum",(req, res)=>{
+
+    res.render("forum", {
+        title : "Forum | BeMyPet"
+    })
+
+});
+
 module.exports = router;
