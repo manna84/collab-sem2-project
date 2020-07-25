@@ -2,7 +2,6 @@ const express = require("express");
 const exphbs = require('express-handlebars');
 const PORT = process.env.PORT || 3000;
 const app = express();
-// const io = require('socket.io').listen(server);
 const server = app.listen(PORT, () => {console.log(`Server running at http://localhost:${PORT}`)});
 const io = require('socket.io').listen(server)
 
@@ -15,20 +14,13 @@ const generalController = require("./controllers/general");
 
 app.use("/", generalController);
 
-
-
-
-
 ////Chat Feature (Socket.io)
 app.get('/', (req, res) => {
     res.sendFile(__dirname + 'views/chat.handlebars')
   })
   
 //   app.use(express.static('.'))
-  
-  
-  
-  
+    
   io.on('connection', function (socket) {
       
     // Listen for a "newuser" message
