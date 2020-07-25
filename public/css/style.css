@@ -116,7 +116,7 @@ h2{
 /*--------------FORUM--------------- */
 
 .section-form {
-    padding: 5% 0;
+    padding: 1% 0;
     font-family: 'lato',Arial, Helvetica, sans-serif;
     font-size: 1em;
     font-weight: 400;
@@ -181,6 +181,28 @@ button {
 button:hover {
     opacity: .8;
     transition: opacity .2s;
+}
+
+#totalAdopt {
+    text-align: center;
+    background-color: red;
+    height: 4em;
+    width: 4em;
+    border-radius: 50em;
+    color: #ffffff;
+    padding: 8% 2%;
+    font-size: 1.5em;
+}
+
+.numberBox {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin: 2em auto;
+}
+
+.numberBox p {
+    padding: 8% 0;
 }
 
 /*---------------------------------------------------------------------------------------------------*/

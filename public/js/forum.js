@@ -27,6 +27,7 @@ petData.addEventListener('submit', (event) => {
         
         countarr.push(textBox);
         document.getElementById('totalAdopt').innerHTML = countarr.length;
+
     }
 
 });
