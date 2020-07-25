@@ -26,9 +26,9 @@ Please share more ideas
 ## Joban
 Started working on chat feature which will be linked to adopt a pet page.   
 Halnding the HTML and Css.     
-Also collaborated with Nishant to get teh socket working for both of us.  
+Also collaborated with Nishant to get the socket working for both of us.  
 
 ## Nishant
 Started working on chat feature which will be linked to adopt a pet page.   
 Halnding the whole JS part of the chat feature.     
-Also collaborated with Joban to get teh socket working for both of us.  
+Also collaborated with Joban to get the socket working for both of us.  
