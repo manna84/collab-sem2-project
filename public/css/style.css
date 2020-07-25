@@ -278,3 +278,25 @@ input[type=password],input[type=email],.signin-info input[type=text] {
     margin: 3em auto;
 }
 
+/**chat Feature Css*/
+
+.wrapper{
+	margin-left: 34em;
+}
+.head-1{
+	color: white;
+}
+.form-1{
+	padding:1em;
+	margin-left: 0em;
+}
+
+#sendMsg, #newMessages{
+	display: none;
+}
+#sendMsg{
+	margin-left: 2em;
+}
+#sendMsg{
+	margin-top: 1em;
+}
