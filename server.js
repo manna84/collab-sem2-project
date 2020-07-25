@@ -2,8 +2,9 @@ const express = require("express");
 const exphbs = require('express-handlebars');
 const PORT = process.env.PORT || 3000;
 const app = express();
+// const io = require('socket.io').listen(server);
+const server = app.listen(PORT, () => {console.log(`Server running at http://localhost:${PORT}`)});
 const io = require('socket.io').listen(server)
-const server = app.listen(port, () => {console.log(`Server running at http://localhost:${port}`)})
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
@@ -16,9 +17,7 @@ app.use("/", generalController);
 
 
 
-app.listen(PORT, ()=>{
-    console.log("Server is running");
-})
+
 
 ////Chat Feature (Socket.io)
 app.get('/', (req, res) => {
@@ -50,3 +49,7 @@ app.get('/', (req, res) => {
   
   
   })
+/////////SERVER
+app.listen(PORT, ()=>{
+    console.log("Server is running");
+})
