@@ -183,3 +183,98 @@ button:hover {
     transition: opacity .2s;
 }
 
+/*---------------------------------------------------------------------------------------------------*/
+/*-----------Login Form-----------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+
+form img {
+    height: 1.250em;
+}
+
+form .registration-logo {
+    display: block;
+    margin: 0 auto;
+    height: 10em;
+}
+
+.login-info,.signin-info {
+    border: 0.063em solid #e7e7e7;
+    width: 40%;
+    padding: 2%;
+    background-color: #fff;
+    margin: 1em auto;
+}
+.login-info h2{
+    margin-bottom: .4em;
+}
+label {
+    font-weight: bold;
+}
+
+input[type=password],input[type=email],.signin-info input[type=text] {
+    width: 100%;
+    margin: .6em 0 .825em 0;
+    padding: 1.5%;
+    outline: none;
+}
+
+.pwd-alert {
+    display: flex;
+}
+
+.pwd-alert p {
+    margin-left: .5em;
+}
+
+.help-box {
+    display: flex;
+    margin-top: 2em;
+}
+
+.help-box img {
+    margin: auto .5em auto 0;
+}
+
+.help-box a {
+    font-size: 90%;
+    font-weight: 400;
+}
+
+.create-btn {
+    display: block;
+    margin: 5em auto;
+    width: 25%;
+    padding: .5% 0; background-color: #FC8121;
+    border: 0.031em solid #767676;
+    border-radius: 0.125em;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*-----------Signup Form-----------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+.signin-info {
+    margin-bottom: 5em;
+}
+
+.signin-info .create-btn {
+    width: 100%;
+    padding: 2% 0;
+    margin: .825em auto 1em auto;
+}
+
+.signin-info .pwd-alert {
+    margin-bottom: .825em;
+}
+
+.create-copy-account::before {
+    display: block;
+    content: "";
+    clear: both;
+    height: 0.031em;
+    width: 20%;
+    background-color: #767676;
+    margin: 3em auto;
+}
+

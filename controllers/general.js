@@ -24,5 +24,35 @@ router.post("/forum",(req, res)=>{
     })
 
 });
+router.get("/registration",(req, res)=>{
+
+    res.render("registration", {
+        title : "Registration | BeMyPet"
+    })
+
+});
+
+router.post("/registration",(req, res)=>{
+
+    res.render("registration", {
+        title : "Registration | BeMyPet"
+    })
+
+});
+router.get("/login",(req, res)=>{
+
+    res.render("login", {
+        title : "Login | BeMyPet"
+    })
+
+});
+
+router.post("/login",(req, res)=>{
+
+    res.render("login", {
+        title : "Login | BeMyPet"
+    })
+
+});
 
 module.exports = router;
