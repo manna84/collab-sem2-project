@@ -23,5 +23,12 @@ Adding a counter meter will be beneficial to track the number of pets adopted. A
 Chat app with the previous parent to discuss about adoption and more queries.
 Please share more ideas
 
-- Nishant
-- Joban
+## Joban
+Started working on chat feature which will be linked to adopt a pet page.   
+Halnding the HTML and Css.     
+Also collaborated with Nishant to get teh socket working for both of us.  
+
+## Nishant
+Started working on chat feature which will be linked to adopt a pet page.   
+Halnding the whole JS part of the chat feature.     
+Also collaborated with Joban to get teh socket working for both of us.  
