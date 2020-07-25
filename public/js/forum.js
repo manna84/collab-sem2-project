@@ -1,5 +1,6 @@
 const petData = document.getElementById('petForm');
-    let count = 0;
+const countarr = [];
+
 petData.addEventListener('submit', (event) => {
 
     
@@ -24,10 +25,8 @@ petData.addEventListener('submit', (event) => {
         const countSubmit = document.getElementById("countSubmit");
         const totalAdopt = document.getElementById("totalAdopt");
         
-        countSubmit.onclick = () => {
-            count++;
-            totalAdopt.innerHTML = count;
-        }
+        countarr.push(textBox);
+        document.getElementById('totalAdopt').innerHTML = countarr.length;
     }
 
 });
