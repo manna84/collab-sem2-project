@@ -24,10 +24,23 @@ People can post about their pets for finding them new home and a parent can simp
 # close
 
 ## Maninder
-Implemented MVC pattern to the project. We can add a forum like post page where users can post about their pets to to be adopted by new parents and also other user can click to the post and view all the details in a "Different layout page".
+1.Implemented MVC pattern to the project. We can add a forum like post page where users can post about their pets to to be adopted by new parents and also other user can click to the post and view all the details in a "Different layout page".
+
 Adding a counter meter will be beneficial to track the number of pets adopted. An increment of +1 when user click the final adopt button.
+
 Chat app with the previous parent to discuss about adoption and more queries.
 Please share more ideas
+
+-----------------------------------------------------------------
+
+1.Added forum page where users can post about there pets with an adopt button to progress further(being planned).
+
+2.Added a counter for total number of pets put for adoption on the forum page
+
+3.Added validations for the login and registration and working successfully.
+Form Data is being retained upon error validations and refresh
+
+4. Chat feature incorporation is facing some routing issues(work in Progress)
 
 ## Joban
 Started working on chat feature which will be linked to adopt a pet page.   

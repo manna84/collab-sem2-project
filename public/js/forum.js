@@ -3,11 +3,11 @@ const countarr = [];
 
 petData.addEventListener('submit', (event) => {
 
-    
+
     event.preventDefault();
     // console.log(petData.petDetail.value);
 
-    if(document.getElementById('petDetail').value == "") {
+    if (document.getElementById('petDetail').value == "") {
         alert("Please enter details")
     }
 
@@ -24,7 +24,7 @@ petData.addEventListener('submit', (event) => {
 
         const countSubmit = document.getElementById("countSubmit");
         const totalAdopt = document.getElementById("totalAdopt");
-        
+
         countarr.push(textBox);
         document.getElementById('totalAdopt').innerHTML = countarr.length;
 
