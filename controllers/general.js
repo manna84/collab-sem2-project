@@ -1,38 +1,38 @@
 const express = require('express')
 const router = express.Router();
 
-router.get("/",(req, res)=>{
+router.get("/", (req, res) => {
 
     res.render("home", {
-        title : "Home | BeMyPet"
+        title: "Home | BeMyPet"
     })
 
 });
 
-router.get("/forum",(req, res)=>{
+router.get("/forum", (req, res) => {
 
     res.render("forum", {
-        title : "Forum | BeMyPet"
+        title: "Forum | BeMyPet"
     })
 
 });
 
-router.post("/forum",(req, res)=>{
+router.post("/forum", (req, res) => {
 
     res.render("forum", {
-        title : "Forum | BeMyPet"
+        title: "Forum | BeMyPet"
     })
 
 });
-router.get("/registration",(req, res)=>{
+router.get("/registration", (req, res) => {
 
     res.render("registration", {
-        title : "Registration | BeMyPet"
+        title: "Registration | BeMyPet"
     })
 
 });
 
-router.post("/registration",(req, res)=>{
+router.post("/registration", (req, res) => {
 
     const errors = [];
 
@@ -59,7 +59,7 @@ router.post("/registration",(req, res)=>{
         errors.push("Please enter an Email...!!!")
     }
 
-    if (req.body.password == ""){
+    if (req.body.password == "") {
         errors.push("Please enter a Password...!!!")
     }
 
@@ -82,36 +82,36 @@ router.post("/registration",(req, res)=>{
     }
 
     let noRefreshSignup = {
-        name : req.body.name,
-        lastName : req.body.lastName,
-        email : req.body.email,
-        password : req.body.password,
+        name: req.body.name,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        password: req.body.password,
     }
-    
-    if(errors.length>0) {
+
+    if (errors.length > 0) {
         res.render("registration", {
             title: "Registration Page",
-            errorMessages : errors,
-            retainData : noRefreshSignup
+            errorMessages: errors,
+            retainData: noRefreshSignup
         })
     }
 
     else {
-         res.redirect("/");
+        res.redirect("/");
     }
-    });
-        
-        // console.log(req.body)
+});
 
-router.get("/login",(req, res)=>{
+// console.log(req.body)
+
+router.get("/login", (req, res) => {
 
     res.render("login", {
-        title : "Login | BeMyPet"
+        title: "Login | BeMyPet"
     })
 
 });
 
-router.post("/login",(req, res)=>{
+router.post("/login", (req, res) => {
 
     const errors = [];
 
@@ -119,7 +119,7 @@ router.post("/login",(req, res)=>{
         errors.push("Please enter an Email...!!!")
     }
 
-    if (req.body.password == ""){
+    if (req.body.password == "") {
         errors.push("Please enter a Password...!!!")
     }
 
@@ -134,22 +134,22 @@ router.post("/login",(req, res)=>{
     }
 
     let noRefreshLogin = {
-        email : req.body.email,
-        password : req.body.password,
+        email: req.body.email,
+        password: req.body.password,
     }
 
-    if(errors.length>0) {
+    if (errors.length > 0) {
         res.render("login", {
-            title : "Login Page", 
-            errorMessages : errors,
-            retainData : noRefreshLogin
+            title: "Login Page",
+            errorMessages: errors,
+            retainData: noRefreshLogin
         })
     }
 
     else {
         res.redirect("/");
     }
- 
+
 });
 
 module.exports = router;

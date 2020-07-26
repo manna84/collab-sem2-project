@@ -1,4 +1,4 @@
-/* IMPORTS */
+/* ----------------FONTS------------------ */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
@@ -57,8 +57,8 @@ section {
 h2 {
     font-size: 2em;
     text-transform: uppercase;
-    word-spacing: 2px;
-    letter-spacing: 1px;
+    word-spacing: 4px;
+    letter-spacing: 2px;
     text-align: center;
 }
 
@@ -359,8 +359,19 @@ input[type=password],input[type=email],.signin-info input[type=text] {
     margin: 5em auto;
     width: 25%;
     padding: .5% 0; background-color: #FC8121;
-    border: 0.031em solid #767676;
+    border: none;
     border-radius: 0.125em;
+}
+
+.errors {
+    background-color: #ff6e75;
+    padding: 1%;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    width: 70%;
+    margin: .5em auto;
+    border-radius: .125em;
 }
 
 /*---------------------------------------------------------------------------------------------------*/
