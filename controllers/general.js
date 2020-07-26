@@ -9,21 +9,22 @@ router.get("/", (req, res) => {
 
 });
 
-router.get("/forum", (req, res) => {
+// router.get("/forum", (req, res) => {
 
-    res.render("forum", {
-        title: "Forum | BeMyPet"
+//     res.render("forum", {
+//         title: "Forum | BeMyPet"
+//     })
+
+// });
+
+router.post("/", (req, res) => {
+
+    res.render("home", {
+        title: "Home | BeMyPet"
     })
 
 });
 
-router.post("/forum", (req, res) => {
-
-    res.render("forum", {
-        title: "Forum | BeMyPet"
-    })
-
-});
 router.get("/registration", (req, res) => {
 
     res.render("registration", {
