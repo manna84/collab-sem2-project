@@ -18,8 +18,8 @@ app.use("/", generalController);
 app.get('/', (req, res) => {
     res.sendFile(__dirname + 'views/chat.handlebars')
   })
-  
-//   app.use(express.static('.'))
+
+  app.use(express.static('.'))
     
   io.on('connection', function (socket) {
       
