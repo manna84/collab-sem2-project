@@ -30,10 +30,11 @@ petData.addEventListener('submit', (event) => {
 
 const clickPost = document.getElementById('btn-post');
 
-clickPost.addEventListener('click', (event)) {
+clickPost.addEventListener('click', (event) => {
     event.preventDefault();
 
     const postBox = document.getElementById('post-box');
+
     postBox.innerHTML = `<section class="section-form">
     <div class="numberBox">
         <p>Total number of pets of adoption</p>
@@ -56,4 +57,5 @@ clickPost.addEventListener('click', (event)) {
     <ul id="forum-box" class="row"></ul>
 
     </section>`;
-}
+})
+
