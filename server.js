@@ -1,6 +1,6 @@
 const express = require("express");
 const exphbs = require('express-handlebars');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const app = express();
 const server = app.listen(PORT, () => {console.log(`Server running at http://localhost:${PORT}`)});
 const io = require('socket.io').listen(server)
@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
   
   
   })
-/////////SERVER
+//SERVER
 app.listen(PORT, ()=>{
     console.log("Server is running");
 })
