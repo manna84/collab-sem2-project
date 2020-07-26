@@ -274,27 +274,40 @@ button:hover {
     transition: opacity .2s;
 }
 
-#totalAdopt {
-    text-align: center;
-    background-color: red;
-    height: 3em;
-    width: 3em;
-    border-radius: 50em;
-    color: #ffffff;
-    padding: 8% 2%;
-    font-size: 2em;
-}
-
 .numberBox {
     display: flex;
     justify-content: space-evenly;
-    width: 30%;
+    width: 50%;
     margin: 2em auto;
 }
 
 .numberBox p {
     padding: 8% 0;
 }
+
+#totalAdopt {
+    text-align: center;
+    background-color: red;
+    height: 3em;
+    width: 3em;
+    border-radius: 100em;
+    color: #ffffff;
+    font-size: 1.3em;
+    margin-top: .7em;
+    padding-top: 3.5%;
+}
+
+#forum-head {
+    text-align: center;
+    margin: 1em auto;
+}
+
+#btn-post {
+    padding: 2% 3%;
+    margin-top: 1em;
+    font-size: 1.1em;
+}
+
 
 /*---------------------------------------------------------------------------------------------------*/
 /*-----------Login Form-----------*/
