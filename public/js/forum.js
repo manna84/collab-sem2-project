@@ -28,6 +28,10 @@ clickPost.addEventListener('click', (event) => {
 
     </section>`;
 
+    //hide the button
+    document.getElementById('forum-head').style.display = 'none';
+
+    //JS for forum page
     const petData = document.getElementById('petForm');
     const countarr = [];
 
