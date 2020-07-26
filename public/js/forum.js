@@ -1,33 +1,3 @@
-const petData = document.getElementById('petForm');
-const countarr = [];
-
-petData.addEventListener('submit', (event) => {
-
-    event.preventDefault();
-    // console.log(petData.petDetail.value);
-
-    if (document.getElementById('petDetail').value == "") {
-        alert("Please enter details")
-    }
-
-    else {
-        const box = document.getElementById('forum-box')
-        const textBox = document.createElement('li');
-        const adoptButton = document.createElement('button')
-        textBox.textContent = petData.petDetail.value;
-        adoptButton.textContent = 'Adopt';
-
-        box.append(textBox);
-        box.append(adoptButton);
-        petData.reset();
-
-        countarr.push(textBox);
-        document.getElementById('totalAdopt').innerHTML = countarr.length;
-
-    }
-
-});
-
 const clickPost = document.getElementById('btn-post');
 
 clickPost.addEventListener('click', (event) => {
@@ -46,7 +16,7 @@ clickPost.addEventListener('click', (event) => {
 
     <div class="post-form-box row">
 
-        <form action="/forum" method="POST" id=petForm>
+        <form action="/" method="POST" id=petForm>
             <textarea type="text" id="petDetail" name="petDetail" placeholder="Please enter details here"
                 rows="10"></textarea>
             <input type="submit" id="countSubmit">
@@ -57,5 +27,35 @@ clickPost.addEventListener('click', (event) => {
     <ul id="forum-box" class="row"></ul>
 
     </section>`;
+
+    const petData = document.getElementById('petForm');
+    const countarr = [];
+
+    petData.addEventListener('submit', (event) => {
+
+        event.preventDefault();
+        // console.log(petData.petDetail.value);
+
+        if (document.getElementById('petDetail').value == "") {
+            alert("Please enter details")
+        }
+
+        else {
+            const box = document.getElementById('forum-box')
+            const textBox = document.createElement('li');
+            const adoptButton = document.createElement('button')
+            textBox.textContent = petData.petDetail.value;
+            adoptButton.textContent = 'Adopt';
+
+            box.append(textBox);
+            box.append(adoptButton);
+            petData.reset();
+
+            countarr.push(textBox);
+            document.getElementById('totalAdopt').innerHTML = countarr.length;
+
+        }
+
+    });
 })
 

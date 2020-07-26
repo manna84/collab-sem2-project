@@ -230,7 +230,7 @@ h3 {
     border: .05em solid #FC8121;
 }
 
-input[type=submit] {
+input[type=submit], {
     width: 15%;
     padding: .5em 1em;
     margin-top: 2em;
@@ -295,6 +295,18 @@ button:hover {
 .numberBox p {
     padding: 8% 0;
 }
+
+.forum-head {
+    text-align: center;
+    margin: 1em auto;
+}
+
+#btn-post {
+    padding: 2% 3%;
+    margin-top: 1em;
+    font-size: 1.1em;
+}
+
 
 /*---------------------------------------------------------------------------------------------------*/
 /*-----------Login Form-----------*/
