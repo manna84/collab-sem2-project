@@ -3,7 +3,6 @@ const countarr = [];
 
 petData.addEventListener('submit', (event) => {
 
-
     event.preventDefault();
     // console.log(petData.petDetail.value);
 
@@ -22,9 +21,6 @@ petData.addEventListener('submit', (event) => {
         box.append(adoptButton);
         petData.reset();
 
-        const countSubmit = document.getElementById("countSubmit");
-        const totalAdopt = document.getElementById("totalAdopt");
-
         countarr.push(textBox);
         document.getElementById('totalAdopt').innerHTML = countarr.length;
 
@@ -32,3 +28,32 @@ petData.addEventListener('submit', (event) => {
 
 });
 
+const clickPost = document.getElementById('btn-post');
+
+clickPost.addEventListener('click', (event)) {
+    event.preventDefault();
+
+    const postBox = document.getElementById('post-box');
+    postBox.innerHTML = `<section class="section-form">
+    <div class="numberBox">
+        <p>Total number of pets of adoption</p>
+        <div id="totalAdopt"></div>
+    </div>
+
+
+    <h3>Please post all the information regarding your pet below</h3>
+
+    <div class="post-form-box row">
+
+        <form action="/forum" method="POST" id=petForm>
+            <textarea type="text" id="petDetail" name="petDetail" placeholder="Please enter details here"
+                rows="10"></textarea>
+            <input type="submit" id="countSubmit">
+        </form>
+
+    </div>
+
+    <ul id="forum-box" class="row"></ul>
+
+    </section>`;
+}
