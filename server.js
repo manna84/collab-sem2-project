@@ -18,7 +18,10 @@ const generalController = require("./controllers/general");
 
 app.use("/", generalController);
 
+app.get("chat",(req, res)=>{
 
+  
+})
   
   app.use(express.static('.'))
   
