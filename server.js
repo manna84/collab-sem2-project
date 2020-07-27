@@ -23,10 +23,18 @@ const generalController = require("./controllers/general");
 
 app.use("/", generalController);
 
-app.get("chat",(req, res)=>{
+app.get("/chat",(req, res)=>{
 
+<<<<<<< HEAD
 
 })
+=======
+  res.render("chat", {
+      title : "Chat | BeMyPet"
+  })
+
+});
+>>>>>>> 46f16b6ab569fa33781d0e294d054693a001f44c
   
   app.use(express.static('.'))
   
