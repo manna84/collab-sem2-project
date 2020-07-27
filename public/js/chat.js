@@ -2,6 +2,7 @@ const $msgForm = document.getElementById('sendMsg')
 const $msgList = document.getElementById('newMessages')
 const $userNameForm = document.getElementById('getUserDetails')
 
+
 let $username = 'Guest';
 let $sentmsgtime = 0;
 //User Name block
@@ -11,6 +12,7 @@ $userNameForm.addEventListener('submit',(event)=>{
 	$msgForm.style.display='block';
 	$userNameForm.style.display='none';
 	$username = event.currentTarget.username.value;
+	alert($username);
 	socket.emit('newuser', {user: `${$username} is Online`})
 })
 

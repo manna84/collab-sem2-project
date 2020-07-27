@@ -25,9 +25,7 @@ app.get("/chat",(req, res)=>{
   })
 
 });
-  app.use(express.static('.'))
-  
-  
+  app.use(express.static('.'))  
   
   io.on('connection', function (socket) {
       

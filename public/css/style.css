@@ -304,7 +304,7 @@ input[type=password],input[type=email],.signin-info input[type=text] {
 
 
 li{
-	color: white;
+	color: green;
 	font-size: large;
 	text-decoration: none;
 }
@@ -312,10 +312,10 @@ ol{
 	list-style: none;
 }
 .wrapper{
-	margin-left: 34em;
+	margin-left: 3em;
 }
 .head-1{
-	color: white;
+	color: black;
 }
 .form-1{
 	padding:1em;
@@ -340,7 +340,7 @@ ol{
 #newMessages{
 	width: 20em;
 	padding: 1em;
-	border: 1px solid white;
+	border: 1px solid black;
 	flex-direction: column;
 	justify-content: center;
 	/* height: 50em;
@@ -348,7 +348,7 @@ ol{
 }
 
 .userjoined{
-	border: 1px solid white;
+	border: 1px solid black;
     display: inline;
 	padding: 0.3em;	
 	text-align: center;
@@ -359,7 +359,7 @@ ol{
 	border-radius: 10px;
 	padding: 0.5em;
 	margin-bottom: 1em;
-	color: white;
+	color: black;
 	font-size: large;
 }
 
