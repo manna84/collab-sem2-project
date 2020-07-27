@@ -22,6 +22,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const generalController = require("./controllers/general");
 
 app.use("/", generalController);
+
+app.get("/chat",(req, res)=>{
+
+  res.render("chat", {
+    title : "Chat | BeMyPet"
+  })
+
+});
   app.use(express.static('.'))
   
   
@@ -47,7 +55,7 @@ app.use("/", generalController);
   
   })
 
-=======
+
 app.use(express.static('.'))
 
 
