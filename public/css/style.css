@@ -343,8 +343,6 @@ ol{
 	border: 1px solid white;
 	flex-direction: column;
 	justify-content: center;
-	/* height: 50em;
-	overflow: auto; */
 }
 
 .userjoined{
