@@ -17,6 +17,10 @@ $userNameForm.addEventListener('submit',(event)=>{
 // Event listener, waiting for an incoming "newuser"
 socket.on('newuser', (data) => {
 	const newMsg = document.createElement('li')
+	
+	$msgList.style.display='flex';
+	$msgForm.style.display='block';
+	
 	$msgList.appendChild(newMsg)
 	newMsg.textContent = data.user
 	newMsg.classList.add("userjoined");
