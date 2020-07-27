@@ -18,13 +18,7 @@ const generalController = require("./controllers/general");
 
 app.use("/", generalController);
 
-app.get("/chat",(req, res)=>{
 
-    res.render("chat", {
-        title : "Chat | BeMyPet"
-    })
-
-});
   
   app.use(express.static('.'))
   
