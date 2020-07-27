@@ -8,11 +8,6 @@ const app = express();
 const server = app.listen(PORT, () => { console.log(`Server running at http://localhost:${PORT}`) })
 const io = require('socket.io').listen(server)
 
-app.listen(PORT, (err) => {
-  if (err) console.error('❌ Unable to connect the server: ', err);
-  console.log(` Server listening on port ${PORT} - ${ENV} environment`);
-});
-
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
