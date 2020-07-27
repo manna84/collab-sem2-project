@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-const server = app.listen(PORT, () => {console.log(`Server running at http://localhost:${PORT}`)})
+const server = app.listen(PORT, () => { console.log(`Server running at http://localhost:${PORT}`) })
 const io = require('socket.io').listen(server)
 
 app.listen(PORT, (err) => {
@@ -23,8 +23,8 @@ const generalController = require("./controllers/general");
 
 app.use("/", generalController);
 
-app.get("/chat",(req, res)=>{
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 })
@@ -61,6 +61,35 @@ app.get("/chat",(req, res)=>{
   
   })
 
+=======
+app.use(express.static('.'))
+
+
+
+io.on('connection', function (socket) {
+
+  // Listen for a "newuser" message
+  socket.on('newuser', (data) => {
+    // Transmit a message to everyone except the sender
+    //socket.broadcast.emit('newuser', data)
+
+    // The same message, sent to all users - try it!
+    io.emit('newuser', data)
+  })
+
+
+  // Listen for "chatmsg"
+  //   io.emit to all user
+  socket.on('chatmsg', (data) => {
+    socket.broadcast.emit('chatmsg', data)
+  })
+
+
+})
+
+
+
+>>>>>>> f5817a2fc931afd015a2d553a15a0044f0e65404
 // app.listen(PORT, ()=>{
 //     console.log("Server is running");
 // })
