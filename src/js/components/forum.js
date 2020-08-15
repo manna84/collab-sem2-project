@@ -1,5 +1,5 @@
-const forum = () => {
+const Forum = () => {
     return<h1>Forum</h1>
 }
 
-export default forum;
+export default Forum;

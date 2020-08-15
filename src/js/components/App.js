@@ -1,11 +1,17 @@
 import React from 'react'
+import Header from "components/Header";
 import 'css/index.css';
 
-import forum from 'components/forum.js'
+import Forum from 'components/Forum.js'
 
 
 const App = () => {
-	return <h1>Hello, World!</h1>
+	return (
+        
+        <>
+            <Header/>
+        </>
+    )
 }
 
 export default App
