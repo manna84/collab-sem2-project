@@ -1,5 +1,10 @@
-const Forum = () => {
-    return<h1>Forum</h1>
-}
+import React from 'react';
 
-export default Forum;
+const Forum = () => {
+    return (
+
+        <>
+        
+        </>
+    ) 
+}

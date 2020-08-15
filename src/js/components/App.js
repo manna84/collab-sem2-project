@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from "components/Header";
+import Footer from "components/Footer";
 import 'css/index.css';
 import 'css/default.css';
 
@@ -11,6 +12,7 @@ const App = () => {
         
         <>
             <Header/>
+            <Footer/>
         </>
     )
 }
