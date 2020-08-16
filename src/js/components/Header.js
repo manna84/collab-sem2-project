@@ -7,9 +7,9 @@ const Header = () => {
         <>
 
             <header>
-                <div class="head-box">
+                <div className="head-box">
 
-                    <a href="#"><img class="logo" src={logo} alt="logo" /></a>
+                    <a href="#"><img className="logo" src={logo} alt="logo" /></a>
 
                     <nav>
                         <ul>
