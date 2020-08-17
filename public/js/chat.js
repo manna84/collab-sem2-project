@@ -1,7 +1,7 @@
 const $msgForm = document.getElementById('sendMsg')
 const $msgList = document.getElementById('newMessages')
 const $userNameForm = document.getElementById('getUserDetails')
-
+//const socket = io()
 
 let $username = 'Guest';
 let $sentmsgtime = 0;
@@ -16,7 +16,7 @@ $userNameForm.addEventListener('submit',(event)=>{
 })
 
 // Event listener, waiting for an incoming "newuser"
-socket.on('newuser', (data) => {
+	socket.on('newuser', (data) => {
 	const newMsg = document.createElement('li')
 	$msgList.appendChild(newMsg)
 	newMsg.textContent = data.user
