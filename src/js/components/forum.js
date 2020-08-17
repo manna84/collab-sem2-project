@@ -127,7 +127,7 @@ const BtnPost = styled.button`
 const Forum = () => {
 
     const clickPost = (event) => {
-        
+        console.log("Manna")
     }
 
     return (
