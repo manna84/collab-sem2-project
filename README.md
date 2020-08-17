@@ -43,9 +43,16 @@ Form Data is being retained upon error validations and refresh
 4. Chat feature incorporation is facing some routing issues(work in Progress)
 
 ## Joban
-Started working on chat feature which will be linked to adopt a pet page.   
-Halnding the HTML and Css.     
-Also collaborated with Nishant to get the socket working for both of us.  
+Welcoming user on the Web chat screen when user has decided to go for one on one chatting.Provided them with an interface from  where they can start off with the feature of sending and receiving texting among the users.
+
+Added page to let user add their name and move them to chat room where they can conneect with other users who might be already in discussion.
+
+Start and destroy sessions when user starts and ends a chat. Made sure previous texting is not visible to user who just joined. Also implemented the socket environment which help us sendig/receiving messages.
+
+Linked the chat feature to the adopt page. When user had made its mind to buy pet but needs some answer, he can jump to chat.
+Implemented the styling of chat applicaion accoding tho the design of application.
+
+  
 
 ## Nishant
 Started working on chat feature which will be linked to adopt a pet page.   
