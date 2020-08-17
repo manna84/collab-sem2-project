@@ -1,10 +1,13 @@
 import React from 'react';
 import logo from 'img/bemypet.png';
 import search from 'img/search.svg';
+import styled from 'styled-components'
+import 'css/header.css';
+
 
 const Header = () => {
     return (
-        <>
+
 
             <header>
                 <div className="head-box">
@@ -23,8 +26,6 @@ const Header = () => {
                 </div>
             </header>
 
-
-        </>
     )
 }
 

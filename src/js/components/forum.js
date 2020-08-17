@@ -1,15 +1,26 @@
 import React from 'react';
 import dog from 'img/dog-red.png'
 
+import styled from 'styled-components';
+import 'css/forum.css';
+
+const HeadingDiv = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+`
+
+
 const Forum = () => {
     return (
 
         <>
-            <div className="heading-box row">
+            <HeadingDiv>
                 <h1>Find the right pet for you</h1>
                 <a href="/registration" className="btn btn-full">Sign Up</a>
                 <a href="/login" className="btn btn-ghost">Log In</a>
-            </div>
+            </HeadingDiv>
 
             <section className="section-adopt row">
                 <h2>Planning to adopt a Pet ?</h2>
