@@ -54,13 +54,13 @@ font-family: 'lato',Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     word-spacing: 2px;
 `
-}
 
 const SectionP = styled.p`
     width: 90%;
     margin: 0 auto;
     text-align: center;
 `
+
 const BtnCommon = css`
     border: .02em solid #FC8121;
     padding: .8em 1.4em;
@@ -107,7 +107,29 @@ const PostDiv = styled.div`
 margin-top: 2em;
 `
 
+const BtnPost = styled.button`
+    background-color: rgb(134, 90, 255);
+    border: none;
+    border-radius: 50em;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: .5em;
+    letter-spacing: 1px;
+    padding: 2% 3%;
+    margin-top: 1em;
+    font-size: 1.1em;
+    &:hover {
+        opacity: .8;
+        transition: opacity .2s;
+    }
+`
+
 const Forum = () => {
+
+    // const clickPost = (event) => {
+    //     console.log("Manna")
+    // }
+
     return (
 
         <>
@@ -124,10 +146,10 @@ const Forum = () => {
 
                 <PetRow id="forum-head">
                     <SectionAdoptH3>want to put your pet for adoption ?</SectionAdoptH3>
-                    <button type="submit" id="btn-post">GO ahead</button>
+                    <BtnPost type="button">GO ahead</BtnPost>
                 </PetRow>
 
-                <PostDiv id="post-box"></PostDiv>
+                <PostDiv></PostDiv>
 
             </SectionAdopt>
         </>
