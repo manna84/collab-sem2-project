@@ -312,16 +312,21 @@ ol{
 	list-style: none;
 }
 .wrapper{
-	margin-left: 3em;
+    margin-left: 35%;
+    padding:0.5em;
 }
 .head-1{
-	color: black;
+    color: black;
+    margin-top: 1em;
 }
 .form-1{
 	padding:1em;
 	margin-left: 0em;
 }
-
+#newMessages{
+    margin-top: 1em;
+    margin-left: -5%;
+}
 #sendMsg, #newMessages{
 	display: none;
 }
