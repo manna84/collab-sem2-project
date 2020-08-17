@@ -4,6 +4,8 @@ import twitter from 'img/twitter.svg';
 import snapchat from 'img/snapchat.svg';
 import youtube from 'img/youtube.svg';
 
+import 'css/footer.css';
+
 
 const Footer = () => {
     return (

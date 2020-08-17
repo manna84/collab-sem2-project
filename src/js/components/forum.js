@@ -1,6 +1,8 @@
 import React from 'react';
 import dog from 'img/dog-red.png'
 
+import 'css/Forum.css';
+
 const Forum = () => {
     return (
 
