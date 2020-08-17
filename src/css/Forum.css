@@ -52,15 +52,15 @@
     padding: 3% 0;
 } */
 
-h2 {
+/* h2 {
     font-size: 2em;
     text-transform: uppercase;
     word-spacing: 4px;
     letter-spacing: 2px;
     text-align: center;
-}
+} */
 
-h2::after {
+/* h2::after {
     display: table;
     content: "";
     clear: both;
@@ -68,7 +68,7 @@ h2::after {
     width: 25%;
     background-color: #FC8121;
     margin: .5em auto;
-}
+} */
 
 /* .section-adopt p {
     width: 90%;
@@ -80,9 +80,9 @@ h2::after {
     text-align: center;
 } */
 
-.section-adopt img {
+/* .section-adopt img {
     margin: 2em;
-}
+} */
 
 /*---------------------------------------------------------------------------------------------------*/
 /*-----------Forum-----------*/
@@ -96,17 +96,17 @@ h2::after {
     line-height: 145%;
 }
 
-h3 {
+/* h3 {
     font-family: 'lato',Arial, Helvetica, sans-serif;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 2px;
-}
+} */
 
-.post-form-box {
+/* .post-form-box {
     margin-top: 2em;
-}
+} */
 
 #petForm {
     display: flex;
