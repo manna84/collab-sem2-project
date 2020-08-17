@@ -126,9 +126,9 @@ const BtnPost = styled.button`
 
 const Forum = () => {
 
-    // const clickPost = (event) => {
-    //     console.log("Manna")
-    // }
+    const clickPost = (event) => {
+        
+    }
 
     return (
 
@@ -146,7 +146,7 @@ const Forum = () => {
 
                 <PetRow id="forum-head">
                     <SectionAdoptH3>want to put your pet for adoption ?</SectionAdoptH3>
-                    <BtnPost type="button">GO ahead</BtnPost>
+                    <BtnPost type="button" onClick={clickPost}>GO ahead</BtnPost>
                 </PetRow>
 
                 <PostDiv></PostDiv>
