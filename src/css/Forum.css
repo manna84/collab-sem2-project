@@ -9,15 +9,15 @@
     transform: translate(-50%,-50%);
 } */
 
-h1 {
+/* h1 {
     font-size: 4em;
     text-transform: uppercase;
     line-height: 115%;
     word-spacing: 4px;
     letter-spacing: 2px;
     color: #ffffff;
-}
-
+} */
+/* 
 .btn {
     border: .02em solid #FC8121;
     padding: .8em 1.4em;
@@ -26,31 +26,31 @@ h1 {
     letter-spacing: 1px;
     border-radius: 50em;
     font-size: 1.2em;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
     background-color: #e76703;
     border: .02 solid #e76703;
     transition: background-color .2s, border .2s;
-}
+} */
 
 
-.btn-full {
+/* .btn-full {
     background-color: #FC8121;
-}
+} */
 
-.btn-ghost {
+/* .btn-ghost {
     margin-left: 1em;
     color: #FC8121;
-}
+} */
 
-.btn-ghost:hover {
+/* .btn-ghost:hover {
     color: #ffffff;
-}
+} */
 
-section {
+/* section {
     padding: 3% 0;
-}
+} */
 
 h2 {
     font-size: 2em;
@@ -70,15 +70,15 @@ h2::after {
     margin: .5em auto;
 }
 
-.section-adopt p {
+/* .section-adopt p {
     width: 90%;
     margin: 0 auto;
     text-align: center;
-}
+} */
 
-.section-adopt {
+/* .section-adopt {
     text-align: center;
-}
+} */
 
 .section-adopt img {
     margin: 2em;
