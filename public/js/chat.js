@@ -12,7 +12,6 @@ $userNameForm.addEventListener('submit',(event)=>{
 	$msgForm.style.display='block';
 	$userNameForm.style.display='none';
 	$username = event.currentTarget.username.value;	
-	alert($username);
 	socket.emit('newuser', {user: `${$username} is Online`})
 })
 
