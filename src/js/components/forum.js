@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDom from 'react-dom'
 import dog from 'img/dog-red.png'
 import styled, { css } from 'styled-components'
 
@@ -126,8 +127,29 @@ const BtnPost = styled.button`
 
 const Forum = () => {
 
+    
+
     const clickPost = (event) => {
-        console.log("Manna")
+        const element = <section className="section-form">
+        <div className="numberBox">
+            <p>Total number of pets of adoption</p>
+            <div id="totalAdopt"></div>
+        </div>
+        <h3>Please post all the information regarding your pet below</h3>
+        <div className="post-form-box row">
+            <form action="/" method="POST" id="petForm">
+                <textarea type="text" id="petDetail" name="petDetail" placeholder="Please enter details here"
+                    rows="10"></textarea>
+                <input type="button" id="countSubmit" onClick={submitPost} />
+            </form>
+        </div>
+        <ul id="forum-box" className="row"></ul>
+        </section>;
+        ReactDom.render(element, document.getElementById('abc'));
+    }
+
+    const submitPost = (event) => {
+        console.log("mannaaaaa")
     }
 
     return (
@@ -149,7 +171,7 @@ const Forum = () => {
                     <BtnPost type="button" onClick={clickPost}>GO ahead</BtnPost>
                 </PetRow>
 
-                <PostDiv></PostDiv>
+                <PostDiv id="abc"></PostDiv>
 
             </SectionAdopt>
         </>
