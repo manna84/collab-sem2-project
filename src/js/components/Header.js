@@ -34,6 +34,11 @@ const NavAnchor = styled.a`
     letter-spacing: 1px;
     border-bottom: .125em solid transparent;
     padding-bottom: .08em;
+    &:hover {
+    color: #FC8121;
+    border-bottom: .05em solid #ffffff;
+    transition: color .2s, border-bottom .2s;
+}
 `
 
 const Header = () => {
