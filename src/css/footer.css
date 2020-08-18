@@ -20,9 +20,9 @@
     display: flex;
 } */
 
-footer nav ul:first-of-type li {
+/* footer nav ul:first-of-type li {
     margin-left: 2em;
-}
+} */
 
 footer nav ul:first-of-type li a{
     color: #ffffff;
