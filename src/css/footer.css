@@ -24,11 +24,11 @@
     margin-left: 2em;
 } */
 
-footer nav ul:first-of-type li a{
+/* footer nav ul:first-of-type li a{
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 300;
-}
+} */
 
 footer nav ul:first-of-type li a:hover{
     color: #fc2828;
