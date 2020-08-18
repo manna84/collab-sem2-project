@@ -131,7 +131,8 @@ const Forum = () => {
 
     const { TextArea } = Input;
 
-    const [value, setTitle] = useState('')
+    const [textInput, setTitle] = useState('')
+    console.log(textInput)
     
 
     const addToForm = (event) => {
