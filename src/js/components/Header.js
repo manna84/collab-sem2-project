@@ -59,7 +59,7 @@ const Header = () => {
                             <NavUlLi><NavAnchor href="#">Home</NavAnchor></NavUlLi>
                             <NavUlLi><NavAnchor href="/forum">Listed Pets</NavAnchor></NavUlLi>
                             <NavUlLi><NavAnchor href="#">Adoption</NavAnchor></NavUlLi>
-                            <NavUlLi><NavAnchor href="#"><NavAnchorLast src={search} alt="search icon" /></NavAnchorLast></NavUlLi>
+                            <NavUlLi><NavAnchorLast href="#"><NavUlImg src={search} alt="search icon" /></NavAnchorLast></NavUlLi>
                         </HeaderUl>
                     </nav>
 
