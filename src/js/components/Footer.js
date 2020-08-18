@@ -23,6 +23,14 @@ const Footerimg = styled.img`
 const FooterUl = styled.ul`
     display: flex;
 `
+const liBox1 = styled.li`
+    margin-left: 2em;
+`
+const Anchor1 = styled.a`
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+`
 
 
 
@@ -35,10 +43,10 @@ const Footer = () => {
 
                 <Footernav>
                     <FooterUl>
-                        <li><a href="">Terms & Conditions</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <liBox1><Anchor1 href="">Terms & Conditions</Anchor1></liBox1>
+                        <liBox1><Anchor1 href="">Privacy Policy</Anchor1></liBox1>
+                        <liBox1><Anchor1 href="">About Us</Anchor1></liBox1>
+                        <liBox1><Anchor1 href="">Contact Us</Anchor1></liBox1>
                     </FooterUl>
 
                     <FooterUl>
