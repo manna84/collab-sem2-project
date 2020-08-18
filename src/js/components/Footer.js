@@ -5,8 +5,6 @@ import snapchat from 'img/snapchat.svg';
 import youtube from 'img/youtube.svg';
 import styled, { css } from 'styled-components'
 
-import 'css/footer.css';
-
 const Footerbox = styled.footer`
     background-color: #FC8121;
     padding: 4% 2%;
@@ -44,10 +42,6 @@ const Paragraph = styled.p`
 const Anchor2 = styled.a`
     margin-right: 2em;
 `
-
-
-
-
 
 const Footer = () => {
     return (
