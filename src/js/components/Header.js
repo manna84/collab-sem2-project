@@ -16,6 +16,11 @@ const HeadBoxdiv = styled.div`
     padding: 1%;
 `
 
+const HeaderUl =styled.ul`
+display: flex;
+    text-transform: uppercase;
+`
+
 const Header = () => {
     return (
         <>
@@ -26,12 +31,12 @@ const Header = () => {
                     <a href="#"><LogoImg className="logo" src={logo} alt="logo" /></a>
 
                     <nav>
-                        <ul>
+                        <HeaderUl>
                             <li><a href="#">Home</a></li>
                             <li><a href="/forum">Listed Pets</a></li>
                             <li><a href="#">Adoption</a></li>
                             <li><a href="#"><img src={search} alt="" /></a></li>
-                        </ul>
+                        </HeaderUl>
                     </nav>
 
                 </HeadBoxdiv>

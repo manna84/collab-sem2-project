@@ -19,10 +19,10 @@ header{
     height: 4em;
 }*/
 
-header nav ul {
+/* header nav ul {
     display: flex;
     text-transform: uppercase;
-}
+} */
 
 header nav ul img {
     height: 1.5em;
