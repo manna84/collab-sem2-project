@@ -34,6 +34,13 @@ const Anchor1 = styled.a`
     color: #fc2828;
     transition: color.2s;    }
 `
+const Paragraph = styled.p`
+    display: block;
+    margin-top: 3em ;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+`
 
 
 
@@ -62,7 +69,7 @@ const Footer = () => {
 
                 </Footernav>
 
-                <p>&copy; 2020 Be my pet Canada</p>
+                <Paragraph>&copy; 2020 Be my pet Canada</Paragraph>
 
             </Footerbox>
         </>
