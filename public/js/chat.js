@@ -1,7 +1,8 @@
 const $msgForm = document.getElementById('sendMsg')
 const $msgList = document.getElementById('newMessages')
 const $userNameForm = document.getElementById('getUserDetails')
-//const socket = io()
+
+const socket = io()
 
 let $username = 'Guest';
 let $sentmsgtime = 0;
