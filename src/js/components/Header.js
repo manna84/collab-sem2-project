@@ -41,6 +41,10 @@ const NavAnchor = styled.a`
 }
 `
 
+const NavAnchorLast = styled.li`
+border-bottom: none;
+`
+
 const Header = () => {
     return (
         <>
@@ -55,7 +59,7 @@ const Header = () => {
                             <NavUlLi><NavAnchor href="#">Home</NavAnchor></NavUlLi>
                             <NavUlLi><NavAnchor href="/forum">Listed Pets</NavAnchor></NavUlLi>
                             <NavUlLi><NavAnchor href="#">Adoption</NavAnchor></NavUlLi>
-                            <NavUlLi><NavAnchor href="#"><NavUlImg src={search} alt="search icon" /></NavAnchor></NavUlLi>
+                            <NavUlLi><NavAnchor href="#"><NavAnchorLast src={search} alt="search icon" /></NavAnchorLast></NavUlLi>
                         </HeaderUl>
                     </nav>
 

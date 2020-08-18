@@ -45,6 +45,6 @@ header{
     transition: color .2s, border-bottom .2s;
 } */
 
-header nav ul li:last-of-type a {
+/* header nav ul li:last-of-type a {
     border-bottom: none;
-}
+} */
