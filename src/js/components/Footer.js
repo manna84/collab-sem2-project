@@ -3,6 +3,7 @@ import facebook from 'img/facebook.svg';
 import twitter from 'img/twitter.svg';
 import snapchat from 'img/snapchat.svg';
 import youtube from 'img/youtube.svg';
+import styled, { css } from 'styled-components'
 
 import 'css/footer.css';
 
