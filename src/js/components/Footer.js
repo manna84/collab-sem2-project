@@ -20,6 +20,9 @@ const Footernav = styled.nav`
 const Footerimg = styled.img`
     height: 2em;
 `
+const FooterUl = styled.ul`
+    display: flex;
+`
 
 
 
@@ -31,19 +34,19 @@ const Footer = () => {
             <Footerbox>
 
                 <Footernav>
-                    <ul>
+                    <FooterUl>
                         <li><a href="">Terms & Conditions</a></li>
                         <li><a href="">Privacy Policy</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Contact Us</a></li>
-                    </ul>
+                    </FooterUl>
 
-                    <ul>
+                    <FooterUl>
                         <li><a href=""><Footerimg src={facebook} alt="facebook" /></a></li>
                         <li><a href=""><Footerimg src={twitter} alt="twitter" /></a></li>
                         <li><a href=""><Footerimg src={snapchat} alt="snapchat" /></a></li>
                         <li><a href=""><Footerimg src={youtube} alt="youtube" /></a></li>
-                    </ul>
+                    </FooterUl>
 
                 </Footernav>
 
