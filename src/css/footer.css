@@ -30,11 +30,11 @@
     font-weight: 300;
 } */
 
-footer nav ul:first-of-type li a:hover{
+/* footer nav ul:first-of-type li a:hover{
     color: #fc2828;
     transition: color.2s;
     
-}
+} */
 
 footer p {
     display: block;
