@@ -13,6 +13,12 @@ const Footerbox = styled.footer`
     font-weight: 400;
     letter-spacing: 1px;
 `
+const Footernav = styled.nav`
+    display: flex;
+    justify-content: space-between;
+`
+
+
 
 const Footer = () => {
     return (
@@ -20,7 +26,7 @@ const Footer = () => {
         <>
             <Footerbox>
 
-                <nav>
+                <Footernav>
                     <ul>
                         <li><a href="">Terms & Conditions</a></li>
                         <li><a href="">Privacy Policy</a></li>
@@ -35,7 +41,7 @@ const Footer = () => {
                         <li><a href=""><img src={youtube} alt="youtube" /></a></li>
                     </ul>
 
-                </nav>
+                </Footernav>
 
                 <p>&copy; 2020 Be my pet Canada</p>
 
