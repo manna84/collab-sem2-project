@@ -29,6 +29,13 @@ const NavUlLi = styled.li`
 margin: 1em 2em 0 0;
 `
 
+const NavAnchor = styled.a`
+    color: #ffffff;
+    letter-spacing: 1px;
+    border-bottom: .125em solid transparent;
+    padding-bottom: .08em;
+`
+
 const Header = () => {
     return (
         <>
@@ -40,10 +47,10 @@ const Header = () => {
 
                     <nav>
                         <HeaderUl>
-                            <NavUlLi><a href="#">Home</a></NavUlLi>
-                            <NavUlLi><a href="/forum">Listed Pets</a></NavUlLi>
-                            <NavUlLi><a href="#">Adoption</a></NavUlLi>
-                            <NavUlLi><a href="#"><NavUlImg src={search} alt="" /></a></NavUlLi>
+                            <NavUlLi><NavAnchor href="#">Home</NavAnchor></NavUlLi>
+                            <NavUlLi><NavAnchor href="/forum">Listed Pets</NavAnchor></NavUlLi>
+                            <NavUlLi><NavAnchor href="#">Adoption</NavAnchor></NavUlLi>
+                            <NavUlLi><NavAnchor href="#"><NavUlImg src={search} alt="search icon" /></NavAnchor></NavUlLi>
                         </HeaderUl>
                     </nav>
 
