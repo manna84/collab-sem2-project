@@ -110,6 +110,10 @@ const PostDiv = styled.div`
 margin-top: 2em;
 `
 
+const Postform = styled.div`
+margin-top:2em;
+`
+
 const BtnPost = styled.button`
     background-color: rgb(134, 90, 255);
     border: none;
@@ -131,12 +135,19 @@ const Forum = () => {
 
     const { TextArea } = Input;
 
-    const [textInput, setTitle] = useState('')
-    console.log(textInput)
-    
+   
+    let boxValue=""
 
     const addToForm = (event) => {
-
+        console.log("success");
+        boxValue = event.currentTarget.value;
+        console.log(boxValue)
+        event.preventDefault();
+    //     setTitle(event.target.value)
+    //     const [textInput, setTitle] = useState('')
+    //     console.log(textInput);
+    const abc = <p>{boxValue}</p>;
+        ReactDom.render(abc, document.getElementById('postForm'));
     }
 
     const clickPost = (event) => {
@@ -149,7 +160,7 @@ const Forum = () => {
         <h3>Please post all the information regarding your pet below</h3>
         <div className="post-form-box row">
             <form id="petForm">
-                <Input.TextArea rows={10} size={"large"} onPressEnter={event => setTitle(event.target.value)}  />
+                <Input.TextArea type="textarea" rows={10} size={"large"} onPressEnter={addToForm} />
                 <input type="submit" id="countSubmit" />
             </form>
         </div>
@@ -183,6 +194,8 @@ const Forum = () => {
                 </PetRow>
 
                 <PostDiv id="postDiv"></PostDiv>
+                {/* <p>{textInput}</p> */}
+                <Postform id="postForm"></Postform>
 
             </SectionAdopt>
         </>
