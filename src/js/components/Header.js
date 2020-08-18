@@ -25,6 +25,10 @@ const NavUlImg = styled.img`
 height: 1.5em;
 `
 
+const NavUlLi = styled.li`
+margin: 1em 2em 0 0;
+`
+
 const Header = () => {
     return (
         <>
@@ -36,10 +40,10 @@ const Header = () => {
 
                     <nav>
                         <HeaderUl>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="/forum">Listed Pets</a></li>
-                            <li><a href="#">Adoption</a></li>
-                            <li><a href="#"><NavUlImg src={search} alt="" /></a></li>
+                            <NavUlLi><a href="#">Home</a></NavUlLi>
+                            <NavUlLi><a href="/forum">Listed Pets</a></NavUlLi>
+                            <NavUlLi><a href="#">Adoption</a></NavUlLi>
+                            <NavUlLi><a href="#"><NavUlImg src={search} alt="" /></a></NavUlLi>
                         </HeaderUl>
                     </nav>
 
