@@ -41,6 +41,9 @@ const Paragraph = styled.p`
     color: #ffffff;
     text-transform: uppercase;
 `
+const Anchor2 = styled.a`
+    margin-right: 2em;
+`
 
 
 
@@ -61,10 +64,10 @@ const Footer = () => {
                     </FooterUl>
 
                     <FooterUl>
-                        <li><a href=""><Footerimg src={facebook} alt="facebook" /></a></li>
-                        <li><a href=""><Footerimg src={twitter} alt="twitter" /></a></li>
-                        <li><a href=""><Footerimg src={snapchat} alt="snapchat" /></a></li>
-                        <li><a href=""><Footerimg src={youtube} alt="youtube" /></a></li>
+                        <li><Anchor2 href=""><Footerimg src={facebook} alt="facebook" /></Anchor2></li>
+                        <li><Anchor2 href=""><Footerimg src={twitter} alt="twitter" /></Anchor2></li>
+                        <li><Anchor2 href=""><Footerimg src={snapchat} alt="snapchat" /></Anchor2></li>
+                        <li><Anchor2 href=""><Footerimg src={youtube} alt="youtube" /></Anchor2></li>
                     </FooterUl>
 
                 </Footernav>
