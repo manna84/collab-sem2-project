@@ -16,9 +16,9 @@
     height: 2em;
 } */
 
-footer nav ul {
+/* footer nav ul {
     display: flex;
-}
+} */
 
 footer nav ul:first-of-type li {
     margin-left: 2em;
