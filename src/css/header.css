@@ -14,10 +14,10 @@ header{
     padding: 1%;
 } */
 
-.logo{
+/*.logo{
     cursor: pointer;
     height: 4em;
-}
+}*/
 
 header nav ul {
     display: flex;

@@ -5,6 +5,11 @@ import styled, { css } from 'styled-components'
 
 import 'css/header.css';
 
+const LogoImg = styled.img`
+    cursor: pointer;
+    height: 4em;
+`
+
 const HeadBoxdiv = styled.div`
     display: flex;
     justify-content: space-between;
@@ -18,7 +23,7 @@ const Header = () => {
             <header>
                 <HeadBoxdiv>
 
-                    <a href="#"><img className="logo" src={logo} alt="logo" /></a>
+                    <a href="#"><LogoImg className="logo" src={logo} alt="logo" /></a>
 
                     <nav>
                         <ul>
