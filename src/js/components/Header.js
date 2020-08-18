@@ -17,8 +17,12 @@ const HeadBoxdiv = styled.div`
 `
 
 const HeaderUl =styled.ul`
-display: flex;
+    display: flex;
     text-transform: uppercase;
+`
+
+const NavUlImg = styled.img`
+height: 1.5em;
 `
 
 const Header = () => {
@@ -35,7 +39,7 @@ const Header = () => {
                             <li><a href="#">Home</a></li>
                             <li><a href="/forum">Listed Pets</a></li>
                             <li><a href="#">Adoption</a></li>
-                            <li><a href="#"><img src={search} alt="" /></a></li>
+                            <li><a href="#"><NavUlImg src={search} alt="" /></a></li>
                         </HeaderUl>
                     </nav>
 
