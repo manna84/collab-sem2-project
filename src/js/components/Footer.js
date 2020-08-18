@@ -7,12 +7,18 @@ import styled, { css } from 'styled-components'
 
 import 'css/footer.css';
 
+const Footerbox = styled.footer`
+    background-color: #FC8121;
+    padding: 4% 2%;
+    font-weight: 400;
+    letter-spacing: 1px;
+`
 
 const Footer = () => {
     return (
 
         <>
-            <footer>
+            <Footerbox>
 
                 <nav>
                     <ul>
@@ -33,7 +39,7 @@ const Footer = () => {
 
                 <p>&copy; 2020 Be my pet Canada</p>
 
-            </footer>
+            </Footerbox>
         </>
 
     )
