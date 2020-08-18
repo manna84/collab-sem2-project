@@ -17,6 +17,10 @@ const Footernav = styled.nav`
     display: flex;
     justify-content: space-between;
 `
+const Footerimg = styled.img`
+    height: 2em;
+`
+
 
 
 
@@ -35,10 +39,10 @@ const Footer = () => {
                     </ul>
 
                     <ul>
-                        <li><a href=""><img src={facebook} alt="facebook" /></a></li>
-                        <li><a href=""><img src={twitter} alt="twitter" /></a></li>
-                        <li><a href=""><img src={snapchat} alt="snapchat" /></a></li>
-                        <li><a href=""><img src={youtube} alt="youtube" /></a></li>
+                        <li><a href=""><Footerimg src={facebook} alt="facebook" /></a></li>
+                        <li><a href=""><Footerimg src={twitter} alt="twitter" /></a></li>
+                        <li><a href=""><Footerimg src={snapchat} alt="snapchat" /></a></li>
+                        <li><a href=""><Footerimg src={youtube} alt="youtube" /></a></li>
                     </ul>
 
                 </Footernav>
