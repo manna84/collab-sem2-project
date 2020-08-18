@@ -36,13 +36,13 @@
     
 } */
 
-footer p {
+/* footer p {
     display: block;
     margin-top: 3em ;
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
-}
+} */
 
 footer nav ul:last-of-type li a{
     margin-right: 2em;
