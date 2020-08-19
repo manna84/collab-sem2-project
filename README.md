@@ -21,7 +21,6 @@ People can post about their pets for finding them new home and a parent can simp
 2.Created a login page that will allow users to gain access by entering their username and password.
 3.Added css styling for both signup and login page for the presentation of webpages.
 4.Added validation to both signup and login pages
-# close
 
 ## Maninder
 1.Implemented MVC pattern to the project. We can add a forum like post page where users can post about their pets to to be adopted by new parents and also other user can click to the post and view all the details in a "Different layout page".
@@ -42,6 +41,24 @@ Form Data is being retained upon error validations and refresh
 
 4. Chat feature incorporation is facing some routing issues(work in Progress)
 
+-----------------------------------------------------------------
+
+1. Added react setup and tranfered all data from MVC pattern(removed MVC patter)
+
+2. Added forum page and tried to use userState for the counter
+
+3. Append the elements on click of adopt button to add post done
+
+4. Used Ant Design for the textarea and passed single values on enter
+
+5. Work in progress for hiding the adopt button on click and using Hooks
+
+6. Counter resolved onPressEnter command for the counter
+
+7. Added chat links for old issues and resolved current bugs
+
+8. Adopt button work for chat in progress
+
 ## Joban
 Welcoming user on the Web chat screen when user has decided to go for one on one chatting.Provided them with an interface from  where they can start off with the feature of sending and receiving texting among the users.
 
@@ -51,8 +68,6 @@ Start and destroy sessions when user starts and ends a chat. Made sure previous 
 
 Linked the chat feature to the adopt page. When user had made its mind to buy pet but needs some answer, he can jump to chat.
 Implemented the styling of chat applicaion accoding tho the design of application.
-
-  
 
 ## Nishant
 - Started working on chat feature which will be linked to adopt a pet page.   
