@@ -8,7 +8,7 @@ const App = () => {
         
         <>
             <Header/>
-            <Forum/>
+            <Forum value={0}/>
             <Footer/>
         </>
     )

@@ -131,14 +131,25 @@ const BtnPost = styled.button`
     }
 `
 
-const Forum = () => {
+const Forum = ({value}) => {
 
     const { TextArea } = Input;
 
     let count = 0
+
+    // let [count,setCount] = useState(value)
+
     let boxValue=""
     // const [count, setCount] = useState(0);
+
+    // const handleChange = (event) => {
+    //     setCount(parseInt(event.currentTarget,value))
+    //     console.log('change',count)
+    // }
+
     const addToForm = (event) => {
+    // setCount(count + 1)
+    // console.log('add',count)
         count++;
         console.log(count);
         console.log("success");
@@ -147,9 +158,9 @@ const Forum = () => {
         event.preventDefault();
         
         
-    //     setTitle(event.target.value)
-    //     const [textInput, setTitle] = useState('')
-    //     console.log(textInput);
+    // //     setTitle(event.target.value)
+    // //     const [textInput, setTitle] = useState('')
+    // //     console.log(textInput);
         const post = <><p>{boxValue}</p></>;
         const adoptCount =<p>{count}</p>;
         ReactDom.render(post, document.getElementById('postForm'));
@@ -162,7 +173,7 @@ const Forum = () => {
         const element = <section className="section-form">
         <div className="numberBox">
             <p>Total number of pets of adoption</p>
-            <div id="totalAdopt"></div>
+            <div id="totalAdopt" type="text">{count}</div>
         </div>
         <h3>Please post all the information regarding your pet below</h3>
         <div className="post-form-box row">
