@@ -8,11 +8,11 @@ header{
     height: 100vh;
 }
 
-.head-box {
+/* .head-box {
     display: flex;
     justify-content: space-between;
     padding: 1%;
-}
+} */
 
 .logo{
     cursor: pointer;

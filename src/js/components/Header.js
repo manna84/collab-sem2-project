@@ -1,15 +1,22 @@
 import React from 'react';
 import logo from 'img/bemypet.png';
 import search from 'img/search.svg';
+import styled, { css } from 'styled-components'
 
 import 'css/header.css';
+
+const HeadBoxdiv = styled.div`
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+`
 
 const Header = () => {
     return (
         <>
 
             <header>
-                <div className="head-box">
+                <HeadBoxdiv>
 
                     <a href="#"><img className="logo" src={logo} alt="logo" /></a>
 
@@ -22,7 +29,7 @@ const Header = () => {
                         </ul>
                     </nav>
 
-                </div>
+                </HeadBoxdiv>
             </header>
 
 
