@@ -1,13 +1,19 @@
-<form>
+<form action="/login" method="POST">
     <img src="img/bemypet.png" alt="logo" class="registration-logo">
     <section class="login-info">
 
         <h2>Sign In</h2>
 
-        <label for = email>Email</label><br>
-        <input type="email" id = email name="email" placeholder="Please enter your email" required><br>
-        <label for = password>Password</label><br>
-        <input type="password" id = password name="password" placeholder="At least 6 characters" minlength="6" required>
+        {{#each errorMessages}}
+        <div class="errors">{{this}}</div>
+        {{/each}}
+
+        <label for=email>Email</label><br>
+        <input type="email" id=email name="email" placeholder="Please enter your email"
+            value="{{retainData.email}}"><br>
+        <label for=password>Password</label><br>
+        <input type="password" id=password name="password" placeholder="At least 6 characters"
+            value="{{retainData.password}}">
 
         <div class="pwd-alert">
             <img src="./img/alarm.svg" alt="alarm icon">
@@ -22,5 +28,5 @@
     </section>
 
     <button type="submit" class="create-btn">Sign In</button>
-    
+
 </form>
