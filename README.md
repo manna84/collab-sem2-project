@@ -55,7 +55,22 @@ Implemented the styling of chat applicaion accoding tho the design of applicatio
   
 
 ## Nishant
-Started working on chat feature which will be linked to adopt a pet page.   
-Halnding the whole JS part of the chat feature.     
-Also collaborated with Joban to get the socket working for both of us.  
-
+- Started working on chat feature which will be linked to adopt a pet page.   
+- Halnding the whole JS part of the chat feature.     
+- Also collaborated with Joban to get the socket working for both of us.  
+- Research and Design created for the website: overall look and feel.
+- Work distributed to team members with communication
+- Assigned as tester of Project, begin with testing MVC framework and styling
+- Collaborated with Joban for Chat app
+- Started coding for the chat app
+- Collaborated with teammates for Chat app to remove routing errors
+- Styling for the chat app suggested
+- Trying to solve errors that suddenly came into existence 
+- Testing the whole application for bugs/coding errors with Joban
+- Trying to resolve why socket.io is not installing in machine
+- Testing the whole application for bugs/erors that were assigned by the team
+- Acted upon the issue raised
+- Issue Solving
+- Issue Solving + React Structure Created
+- Errors solved for the Structure and worked upon the styling
+- Converted Styled components for the Footer
