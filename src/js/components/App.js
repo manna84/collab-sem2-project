@@ -4,12 +4,12 @@ import Footer from "components/Footer";
 import Forum from "components/Forum";
 
 const App = () => {
-	return (
-        
+    return (
+
         <>
-            <Header/>
-            <Forum value={0}/>
-            <Footer/>
+            <Header />
+            <Forum value={0} />
+            <Footer />
         </>
     )
 }

@@ -131,7 +131,7 @@ const BtnPost = styled.button`
     }
 `
 
-const Forum = ({value}) => {
+const Forum = ({ value }) => {
 
     const { TextArea } = Input;
 
@@ -139,7 +139,7 @@ const Forum = ({value}) => {
 
     // let [count,setCount] = useState(value)
 
-    let boxValue=""
+    let boxValue = ""
     // const [count, setCount] = useState(0);
 
     // const handleChange = (event) => {
@@ -148,41 +148,41 @@ const Forum = ({value}) => {
     // }
 
     const addToForm = (event) => {
-    // setCount(count + 1)
-    // console.log('add',count)
+        // setCount(count + 1)
+        // console.log('add',count)
         count++;
         console.log(count);
         console.log("success");
         boxValue = event.currentTarget.value;
         console.log(boxValue)
         event.preventDefault();
-        
-        
-    // //     setTitle(event.target.value)
-    // //     const [textInput, setTitle] = useState('')
-    // //     console.log(textInput);
+
+
+        // //     setTitle(event.target.value)
+        // //     const [textInput, setTitle] = useState('')
+        // //     console.log(textInput);
         const post = <><p>{boxValue}</p></>;
-        const adoptCount =<p>{count}</p>;
+        const adoptCount = <p>{count}</p>;
         ReactDom.render(post, document.getElementById('postForm'));
-        ReactDom.render(adoptCount,document.getElementById('totalAdopt'))
-        
+        ReactDom.render(adoptCount, document.getElementById('totalAdopt'))
+
     }
 
     const clickPost = (event) => {
         event.preventDefault();
         const element = <section className="section-form">
-        <div className="numberBox">
-            <p>Total number of pets of adoption</p>
-            <div id="totalAdopt" type="text"></div>
-        </div>
-        <h3>Please post all the information regarding your pet below</h3>
-        <div className="post-form-box row">
-            <form id="petForm">
-                <Input.TextArea type="textarea" rows={10} size={"large"} allowClear="true"  onPressEnter={addToForm} />
-                <input type="submit" id="countSubmit" />
-            </form>
-        </div>
-        <ul id="forum-box" className="row"></ul>
+            <div className="numberBox">
+                <p>Total number of pets of adoption</p>
+                <div id="totalAdopt" type="text"></div>
+            </div>
+            <h3>Please post all the information regarding your pet below</h3>
+            <div className="post-form-box row">
+                <form id="petForm">
+                    <Input.TextArea type="textarea" rows={10} size={"large"} allowClear="true" onPressEnter={addToForm} />
+                    <input type="submit" id="countSubmit" />
+                </form>
+            </div>
+            <ul id="forum-box" className="row"></ul>
         </section>;
         ReactDom.render(element, document.getElementById('postDiv'));
     }

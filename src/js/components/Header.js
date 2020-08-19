@@ -16,7 +16,7 @@ const HeadBoxdiv = styled.div`
     padding: 1%;
 `
 
-const HeaderUl =styled.ul`
+const HeaderUl = styled.ul`
     display: flex;
     text-transform: uppercase;
 `
