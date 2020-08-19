@@ -47,9 +47,10 @@ clickPost.addEventListener('click', (event) => {
         else {
             const box = document.getElementById('forum-box')
             const textBox = document.createElement('li');
-            const adoptButton = document.createElement('button')
+            const adoptButton = document.createElement('a')
             textBox.textContent = petData.petDetail.value;
             adoptButton.textContent = 'Adopt';
+            adoptButton.href = '/chat';
 
             box.append(textBox);
             box.append(adoptButton);

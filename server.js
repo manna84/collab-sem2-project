@@ -28,19 +28,12 @@ socket.on('newuser', (data) => {
 
 app.use("/", generalController);
 
-app.get("/chat",(req, res)=>{
-
-  res.render("chat", {
-    title : "Chat | BeMyPet"
-  })
-
-});
   app.use(express.static('.'))  
   
 
 
 
 
-app.listen(PORT, () => {
-    console.log("Server is running");
-
+// app.listen(PORT, () => {
+//     console.log("Server is running");
+// })

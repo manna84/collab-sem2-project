@@ -10,10 +10,6 @@ router.get("/", (req, res) => {
 });
 
 
-
-
-
-
 router.get("/forum",(req, res)=>{
 
 // router.get("/forum", (req, res) => {
@@ -22,7 +18,15 @@ router.get("/forum",(req, res)=>{
 //         title: "Forum | BeMyPet"
 //     })
 
-// });
+});
+
+router.get("/chat",(req, res)=>{
+
+    res.render("chat", {
+      title : "Chat | BeMyPet"
+    })
+  
+  });
 
 router.post("/", (req, res) => {
 
