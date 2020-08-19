@@ -415,3 +415,83 @@ input[type=password],input[type=email],.signin-info input[type=text] {
     margin: 3em auto;
 }
 
+/*chat*/
+
+
+li{
+	color: green;
+	font-size: large;
+	text-decoration: none;
+}
+ol{
+	list-style: none;
+}
+.wrapper{
+    margin-left: 35%;
+    padding:0.5em;
+}
+.head-1{
+    color: black;
+    margin-top: 1em;
+}
+.form-1{
+	padding:1em;
+	margin-left: 0em;
+}
+#newMessages{
+    margin-top: 1em;
+    margin-left: -5%;
+}
+#sendMsg, #newMessages{
+	display: none;
+}
+#sendMsg{
+	margin-left: 2em;
+}
+#sendMsg{
+	margin-top: 1em;
+}
+
+#getUserDetails
+{
+	display: block;
+}
+
+#newMessages{
+	width: 20em;
+	padding: 1em;
+	border: 1px solid black;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.userjoined{
+	border: 1px solid black;
+    display: inline;
+	padding: 0.3em;	
+	text-align: center;
+	margin:auto;	
+}
+
+.messagesent, .messagereceive{
+	border-radius: 10px;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	color: black;
+	font-size: large;
+}
+
+.messagesent{
+	background-color: #25D366;    
+    align-self: flex-end;   
+}
+
+.messagereceive{
+	background-color: grey;
+	align-self: flex-start;
+}
+
+.senderDetails{
+	color: #ECE5DD;
+	font-size: 14px;
+}

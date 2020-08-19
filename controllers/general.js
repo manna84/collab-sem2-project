@@ -9,6 +9,13 @@ router.get("/", (req, res) => {
 
 });
 
+
+
+
+
+
+router.get("/forum",(req, res)=>{
+
 // router.get("/forum", (req, res) => {
 
 //     res.render("forum", {
