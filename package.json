@@ -37,5 +37,14 @@
     "url": "https://github.com/manna84/collab-sem2-project/issues"
   },
   "homepage": "https://github.com/manna84/collab-sem2-project#readme",
+<<<<<<< HEAD
   "description": ""
+=======
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0"
+  }
+>>>>>>> master
 }
