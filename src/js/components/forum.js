@@ -173,7 +173,7 @@ const Forum = ({value}) => {
         const element = <section className="section-form">
         <div className="numberBox">
             <p>Total number of pets of adoption</p>
-            <div id="totalAdopt" type="text">{count}</div>
+            <div id="totalAdopt" type="text"></div>
         </div>
         <h3>Please post all the information regarding your pet below</h3>
         <div className="post-form-box row">
