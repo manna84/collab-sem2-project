@@ -135,19 +135,26 @@ const Forum = () => {
 
     const { TextArea } = Input;
 
-   
+    let count = 0
     let boxValue=""
-
+    // const [count, setCount] = useState(0);
     const addToForm = (event) => {
+        count++;
+        console.log(count);
         console.log("success");
         boxValue = event.currentTarget.value;
         console.log(boxValue)
         event.preventDefault();
+        
+        
     //     setTitle(event.target.value)
     //     const [textInput, setTitle] = useState('')
     //     console.log(textInput);
-    const abc = <p>{boxValue}</p>;
-        ReactDom.render(abc, document.getElementById('postForm'));
+        const post = <><p>{boxValue}</p></>;
+        const adoptCount =<p>{count}</p>;
+        ReactDom.render(post, document.getElementById('postForm'));
+        ReactDom.render(adoptCount,document.getElementById('totalAdopt'))
+        
     }
 
     const clickPost = (event) => {
@@ -160,7 +167,7 @@ const Forum = () => {
         <h3>Please post all the information regarding your pet below</h3>
         <div className="post-form-box row">
             <form id="petForm">
-                <Input.TextArea type="textarea" rows={10} size={"large"} onPressEnter={addToForm} />
+                <Input.TextArea type="textarea" rows={10} size={"large"} allowClear="true"  onPressEnter={addToForm} />
                 <input type="submit" id="countSubmit" />
             </form>
         </div>
@@ -169,10 +176,10 @@ const Forum = () => {
         ReactDom.render(element, document.getElementById('postDiv'));
     }
 
-    const submitPost = (event) => {
-        event.preventDefault();
-        console.log("mannaaaaa")
-    }
+    // const submitPost = (event) => {
+    //     event.preventDefault();
+    //     console.log("mannaaaaa")
+    // }
 
     return (
 
